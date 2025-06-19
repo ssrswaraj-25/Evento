@@ -69,6 +69,8 @@
 
 
 🙌 Acknowledgements
+
+
 Built as part of an academic project to demonstrate full-stack web development and UI/UX design principles.
 
 Feel free to fork, clone, or contribute to this project!
