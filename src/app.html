@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="width=device-width, initial-scale=1.0">
+    <title>WAD miniproject</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+        
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- custom css file link-->
+    <link rel="stylesheet" href="styles.css">
+
+
+
+</head>
+
+
+<script>
+  import { Router, Route } from 'svelte-routing';
+  import About from './aboutus.html';
+  import EventPlanning from './eventplanning.html';
+  import Prices from './prices.html';
+</script>
+
+<Router>
+  
+  <Route path="/about" component={About} />
+  <Route path = "/event planning" component={eventplanning} />
+  <Route path = "/prices" component={Prices} />
+</Router>
+
+
+<body>
+
+  <!--header section starts-->
+
+  <header class="header">
+
+    <a href="#" class="logo"><span>E</span>vento</a>
+
+    <nav class="navbar">
+      <a href="#home">home</a>
+      <a href="/src/aboutus.html">About us</a>
+      <a href="/src/prices.html">prices</a>
+      <a href="/src/designstudio.html">design studio</a>
+      <a href="/src/gallery.html">gallery</a>
+      <a href="/src/testimonials.html">testimonials</a>
+      <a href="/src/contactus.html ">contact us</a>
+
+    </nav>
+  </header>
+  <!--header section ends-->
+
+  <!-- Home section starts-->
+
+  <section class = "home" id = "home">
+
+    <div class="content">
+      <h3> Want to make your special moments memorable? Worry not,<span> evento</span> is here for you!</h3>
+      <a href="/src/contactus.html" class="btn">contact us</a>
+    </div>
+
+    <div class = "swiper-container home-slider">
+      <div class = "swiper-wrapper">
+        <div class = "swiper-slide"><img src = "lib/images/slide-1.jpeg" alt = " "></div>
+        <div class = "swiper-slide"><img src = "lib/images/slide-2.jpeg " alt = " "></div>
+        <div class = "swiper-slide"><img src = "lib/images/slide-3.jpeg " alt = " "></div>
+        <div class = "swiper-slide"><img src = "lib/images/slide-4.jpeg" alt = " "></div>
+        <div class = "swiper-slide"><img src = "lib/images/slide-5.jpeg " alt = " " ></div>
+        <div class = "swiper-slide"><img src = "lib/images/slide-6.jpeg " alt = " "></div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Home section ends-->
+
+  <!-- service section starts-->
+
+  <section class = "service" id = "service">
+
+    <h1 class = "heading"> our <span> services</span></h1>
+
+    <div class = "box-container">
+      <div class = "box">
+        <i class = "fas fa-map-marker-alt"></i>
+        <h3>venue selection</h3>
+        <p> fueiaeobg grfeqqbe bgfbnrwh graeehqerhpgu ewrqhuhog aui reqgqehy.</p>
+      </div>
+
+      <div class = "box">
+        <i class = "fas fa-envelope"></i>
+        <h3>invitation card</h3>
+        <p> fueiaeobg grfeqqbe bgfbnrwh graeehqerhpgu ewrqhuhog aui reqgqehy.</p>
+      </div>
+
+      <div class = "box">
+        <i class = "fas fa-music"></i>
+        <h3>entertainment</h3>
+        <p> fueiaeobg grfeqqbe bgfbnrwh graeehqerhpgu ewrqhuhog aui reqgqehy.</p>
+      </div>
+
+      <div class = "box">
+        <i class = "fas fa-utensils"></i>
+        <h3>food and drinks</h3>
+        <p> fueiaeobg grfeqqbe bgfbnrwh graeehqerhpgu ewrqhuhog aui reqgqehy.</p>
+      </div>
+
+      <div class = "box">
+        <i class = "fas fa-photo-video"></i>
+        <h3>photos and videos</h3>
+        <p> fueiaeobg grfeqqbe bgfbnrwh graeehqerhpgu ewrqhuhog aui reqgqehy.</p>
+      </div>
+
+
+      <div class = "box">
+        <i class = "fas fa-birthday-cake"></i>
+        <h3>custom foods</h3>
+        <p> fueiaeobg grfeqqbe bgfbnrwh graeehqerhpgu ewrqhuhog aui reqgqehy.</p>
+      </div>
+
+      <div class = "box">
+        <i class = "fas fa-photo-video"></i>
+        <h3>design studio</h3>
+        <p> fueiaeobg grfeqqbe bgfbnrwh graeehqerhpgu ewrqhuhog aui reqgqehy.</p>
+      </div>
+
+      <div class = "box">
+        <i class = "fas fa-film"></i>
+        <h3>thematic events</h3>
+        <p> fueiaeobg grfeqqbe bgfbnrwh graeehqerhpgu ewrqhuhog aui reqgqehy.</p>
+      </div>
+
+
+
+    </div>
+  </section>
+
+
+  <!-- service section ends-->
+
+  <!-- footer section starts-->
+  <section class = "footer">
+
+    <div class = "box-container">
+
+      <div class="box">
+      <h3>branches</h3>
+      <a href="#"><i class = "fas fa-map-marker-alt"></i> Versova</a>
+      <a href="#"><i class = "fas fa-map-marker-alt"></i> Andheri West</a>
+      <a href="#"><i class = "fas fa-map-marker-alt"></i> Bandra</a>
+      <a href="#"><i class = "fas fa-map-marker-alt"></i> BKC</a>
+      <a href="#"><i class = "fas fa-map-marker-alt"></i> Ghatkopar</a>
+      <a href="#"><i class = "fas fa-map-marker-alt"></i> Navi Mumbai</a>
+      </div>
+
+      <div class = "box">
+        <h3>quick links</h3>
+        <a href="#"><i class = "fas fa-arrow-right"></i> home</a>
+        <a href="/src/aboutus.html"><i class = "fas fa-arrow-right"></i> about </a>
+        <a href="/src/prices.html"><i class = "fas fa-arrow-right"></i> prices</a>
+        <a href="/src/designstudio.html"><i class = "fas fa-arrow-right"></i> design studio</a>
+        <a href="/src/gallery.html"><i class = "fas fa-arrow-right"></i> gallery</a>
+        <a href="/src/testimonials.html"><i class = "fas fa-arrow-right"></i> testimonials</a>
+        <a href="/src/contactus.html"><i class = "fas fa-arrow-right"></i> contact us</a>
+  
+      </div> 
+
+      <div class = "box">
+        <h3>contact info</h3>
+        <a href="#"><i class = "fas fa-phone"></i> +91 7620141166</a>
+        <a href="#"><i class = "fas fa-phone"></i> +1 (415) 653-6021 </a>
+        <a href="#"><i class = "fas fa-envelope"></i> swarajr2020@gmail.com</a>
+        <a href="#"><i class = "fas fa-envelope"></i> aishwarya.rajguru7@gmail.com</a>
+        <a href="#"><i class = "fas fa-map-marker-alt"></i> mumbai, india - 400 006</a>
+        </div>
+
+        <div class = "box">
+          <h3>follow us</h3>
+          <a href="#"><i class = "fas fab fa-facebook-f"></i> facebook</a>
+          <a href="#"><i class = "fas fab fa fa-twitter"></i> twitter </a>
+          <a href="#"><i class = "fas fab fa-instagram"></i> instagram</a>
+          <a href="#"><i class = "fas fab fa fa-linkedin"></i> linkedin</a>
+          <a href="#"><i class = "fas fab-map-marker-alt"></i> mumbai, india - 400 006</a>
+          </div>
+
+
+
+    </div> 
+
+    
+
+    
+
+      
+
+        <div class = "credit"> created by <span>Evento management pvt ltd</span> | all rights reserved!</div>
+
+
+  </section>
+
+  <!-- footer section ends-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src = "https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+<!--custom js file link-->
+<script src ="js/script.js"></script>
+
+
+</body>
+
+
+</html>
+
